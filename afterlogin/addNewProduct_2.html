@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/app.css"  media="screen,projection"/>
+      
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     
+    </head>
+
+    <body style="background-color:#f5eee6;">
+        <nav class="light-blue lighten-1" role="navigation">
+            <div class="nav-wrapper container" >
+                <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#!">Edit Profile</a></li>
+                <li><a href="#!">Support</a></li>
+                <li><a href="#!">Help</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Logout</a></li>
+              </ul>
+                <a id="logo-container" href="#" class="brand-logo"><img src="imgs/logo.jpg"/></a>
+                <ul class="right hide-on-med-and-down" style="margin-top:10px;">
+                <li class="coin">
+                  <h6>Rewards</h6>
+                  <p>Points available:<span>2.2</span></p>
+                  <p>Points available:<span>0.0</span></p>
+                </li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons left">perm_identity</i>Satheesh<i class="material-icons right">arrow_drop_down</i></a></li>
+              </ul>
+              
+              <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+        <div class="container" >
+            <div class="row" align="center">
+                <h5 class="pageTitle">
+                  <div class="pageTitleText"> Add New Product</div>
+                </h5>
+                </div>
+                <ul class='nav nav-wizard'>
+                  <li><a href='#step1' data-toggle="tab">Step 1 - Enter Product Details</a></li>
+                  <li class='active'><a href='#step2' data-toggle="tab">Step 2 - Register Manufacturer Warranty</a></li>
+                  <li><a>Step 3(optional) - Register Extended Warranty</a></li>
+                </ul>
+                <div class="row">
+                  <div class="col s12">
+                    <div class="card-panel" align="left">
+                          <div class="row">
+                            <form class="col s12">
+                              <div class="row">
+                                <div class=" col s12">
+                                  <label for="Country">Country</label>
+                                  <select>
+                                    <option></option>
+                                    <option value="1">Singapore</option>
+                                    <option value="2">India</option>
+                                    <option value="3">South Korea</option>
+                                  </select>
+                                  
+                                </div>
+                                 </div>
+                                 <div class="row">
+                                <div class="input-field col s6">
+                                  <input id="PurchasedFrom" type="text" class="validate">
+                                  <label for="PurchasedFrom">PurchasedFrom</label>
+                                </div>
+                                
+                                <div class="input-field col s6">
+                                  <input id="warrantymonths" type="text" class="validate">
+                                  <label for="warrantymonths">Warranty Months</label>
+                                </div>
+                                <div class=" col s6">
+                                   <label for="PurchasedOn">Purchased On</label>
+                                   <input id="PurchasedOn" type="date" class="validate">
+                                 
+                                </div>
+                                <div class="col s6">
+                                  <label for="warrantyfrom">Warranty Start Date</label>
+                                  <input id="warrantyfrom" type="date" class="validate">
+                                  
+                                </div>
+                                <div class="input-field col s4">
+                                  <input id="productcost" type="text" class="validate">
+                                  <label for="productcost">Product Cost</label>
+                                </div>
+                                 <div class="input-field col s2">
+                                   <select>
+                                   
+                                    <option value="1">SGD</option>
+                                    <option value="2">INR</option>
+                                    <option value="3">YEN</option>
+                                  </select>
+                                  
+                                </div>
+                                <div class="input-field col s6">
+                                  <input id="warrantyno" type="text" class="validate">
+                                  <label for="warrantyno">Warranty Number</label>
+                                </div>
+                                <div class="input-field col s6">
+                                  <input id="billno" type="text" class="validate">
+                                  <label for="billno">Bill Number</label>
+                                </div>
+                                </div>
+                                <div class="row">
+                                  <div class="file-field input-field">
+                                    <div class="btn">
+                                      <span>Attachments</span>
+                                      <input type="file">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                      <input class="file-path validate" type="text" placeholder="Upload files">
+                                    </div>
+                                  </div>
+                               
+                              </div>
+                              <div class="row">
+                                  <div class="file-field input-field">
+                                    <div class="btn">
+                                      <span>Attachments</span>
+                                      <input type="file">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                      <input class="file-path validate" type="text" placeholder="Upload files">
+                                    </div>
+                                  </div>
+                               
+                              </div>
+                              <div class="row">
+                                  <div class="file-field input-field">
+                                    <div class="btn">
+                                      <span>Attachments</span>
+                                      <input type="file">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                      <input class="file-path validate" type="text" placeholder="Upload files">
+                                    </div>
+                                  </div>
+                               
+                              </div>
+                                <div class="row">
+                                  <div class="input-field col s12">
+                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Additional Information</label>
+                                  </div>
+                                </div>
+                              
+                            </form>
+                          </div>
+                          <div class="row">
+                               <div class="col s6" style="padding:20px;">
+                                  <button class="btn waves-effect waves-light left" type="submit" name="action">Submit</button> &nbsp;<span class="buttonbar"> | </span><a href="#" class="buttonbar">Cancel</a>
+                              </div>
+                           </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer row">
+                  <p>YARRAA Inc &copy; 2009 <a href="http://www.yarraa.com/tnc.html">User Agreement</a> | <a href="http://www.yarraa.com/privacy.htm">Privacy Policy</a> | <a href="http://www.yarraa.com/copyright.htm">Copyright Policy</a></p>
+                  <p>Use of this site is subject to express terms of use, which prohibit commercial use of this site.</p>
+                  <p>By continuing past this page, you agree to abide by these terms. Drop us your valuable feedback <a href="feedback@yarraa.com">here</a>.</p>
+                  <!--p>This site is best viewed in Microsoft Internet Explorer 6.0+ with a resolution of 1280x800.</p-->
+                </div>
+            </div>
+        </div>
+            <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+            <script type="text/javascript" src="js/angular.min.js"></script>
+            <script type="text/javascript" src="js/materialize.js"></script>
+      </body>
+  </html>

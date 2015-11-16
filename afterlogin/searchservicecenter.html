@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/app.css"  media="screen,projection"/>
+      
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     
+    </head>
+
+    <body style="background-color:#f5eee6;">
+        <nav class="light-blue lighten-1" role="navigation">
+            <div class="nav-wrapper container" >
+                <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#!">Edit Profile</a></li>
+                <li><a href="#!">Support</a></li>
+                <li><a href="#!">Help</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Logout</a></li>
+              </ul>
+                <a id="logo-container" href="#" class="brand-logo"><img src="imgs/logo.jpg"/></a>
+                <ul class="right hide-on-med-and-down" style="margin-top:10px;">
+                <li class="coin">
+                  <h6>Rewards</h6>
+                  <p>Points available:<span>2.2</span></p>
+                  <p>Points available:<span>0.0</span></p>
+                </li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons left">perm_identity</i>Satheesh<i class="material-icons right">arrow_drop_down</i></a></li>
+              </ul>
+              
+              <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+        <div class="container" >
+            <div class="row" align="center">
+                <h5 class="pageTitle">
+                    <div  class="col s6 pageTitleText">Search Service Center</div>
+                    <div  class="col s3">&nbsp;</div>
+                    <div class=" s3">
+                       &nbsp;
+                    </div> 
+                </h5>
+                
+                <div class="row">
+                  <div class="col s12">
+                    <div class="card-panel" align="left">
+                        <div class="row">
+                            <form class="col s12">
+                              <div class="row">
+                                <div class="input-field col s2">
+                                  <input id="brand" type="text" class="validate">
+                                  <label for="brand">Brand</label>
+                                </div>
+                                <div class="input-field col s2">
+                                  <input id="producttype" type="text" class="validate">
+                                  <label for="producttype">Product Type</label>
+                                </div>
+                                <div class="input-field col s2">
+                                   <select>
+                                   <option value="" disabled selected>Please Select Country</option>
+                                    <option value="1">Singapore</option>
+                                    <option value="2">India</option>
+                                    <option value="3">USA</option>
+                                  </select>
+                                </div>
+                                <div class="input-field col s2">
+                                  <input id="address" type="text" class="validate">
+                                  <label for="address">Address Contains</label>
+                                </div>
+                                <div class="input-field col s4">
+                                    <button class="btn waves-effect waves-light left" type="submit" name="action">Search</button>
+                                </div>
+                              </div>
+                            </form>
+                        </div>
+                         <table  class="bordered striped highlight responsive-table">
+                            <thead>
+                              <tr>
+                                  
+                                  <th data-field="brand">Brand</th>
+                                  <th data-field="model">Country</th>
+                                  <th data-field="producttype">Product Type</th>
+                                  <th data-field="serialno">Address</th>
+                              </tr>
+                            </thead>
+                    
+                            <tbody>
+                              <tr>
+                                <td><div>V-GUARD</div></td>
+                                <td>India</td>
+                                <td>Stabilizer</td>
+                                <td>Address1, India</td>
+                              </tr>
+                              <tr>
+                                <td><div>V-GUARD</div></td>
+                                <td>Singapore</td>
+                                <td>Stabilizer</td>
+                                <td>Address1, Singapore</td>
+                              </tr>
+                              <tr>
+                                <td><div>YARRAA</div></td>
+                                <td>USA</td>
+                                <td>TV</td>
+                                <td>Address2, USA</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="row">
+                               <div class="col s6" style="padding:20px;">
+                          <button class="btn waves-effect waves-light left" type="submit" name="action">Back to List</button>
+                          </div>
+                           <div class="col s6" align="right">
+                           <ul class="pagination">
+                            <li class="disabled waves-effect"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                            <li class="active"><a href="#!">1</a></li>
+                            <li class="waves-effect"><a href="#!">2</a></li>
+                            <li class="waves-effect"><a href="#!">3</a></li>
+                            <li class="waves-effect"><a href="#!">4</a></li>
+                            <li class="waves-effect"><a href="#!">5</a></li>
+                            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                          </ul>
+                          </div>
+                           </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer row">
+                  <p>YARRAA Inc &copy; 2009 <a href="http://www.yarraa.com/tnc.html">User Agreement</a> | <a href="http://www.yarraa.com/privacy.htm">Privacy Policy</a> | <a href="http://www.yarraa.com/copyright.htm">Copyright Policy</a></p>
+                  <p>Use of this site is subject to express terms of use, which prohibit commercial use of this site.</p>
+                  <p>By continuing past this page, you agree to abide by these terms. Drop us your valuable feedback <a href="feedback@yarraa.com">here</a>.</p>
+                  <!--p>This site is best viewed in Microsoft Internet Explorer 6.0+ with a resolution of 1280x800.</p-->
+                </div>
+            </div>
+        </div>
+            <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+            <script type="text/javascript" src="js/angular.min.js"></script>
+            <script type="text/javascript" src="js/materialize.js"></script>
+      </body>
+  </html>

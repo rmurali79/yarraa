@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/app.css"  media="screen,projection"/>
+      
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     
+    </head>
+
+    <body style="background-color:#f5eee6;">
+        <nav class="light-blue lighten-1" role="navigation">
+            <div class="nav-wrapper container" >
+                <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#!">Edit Profile</a></li>
+                <li><a href="#!">Support</a></li>
+                <li><a href="#!">Help</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Logout</a></li>
+              </ul>
+                <a id="logo-container" href="#" class="brand-logo"><img src="imgs/logo.jpg"/></a>
+                <ul class="right hide-on-med-and-down" style="margin-top:10px;">
+                <li class="coin">
+                  <h6>Rewards</h6>
+                  <p>Points available:<span>2.2</span></p>
+                  <p>Points available:<span>0.0</span></p>
+                </li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons left">perm_identity</i>Satheesh<i class="material-icons right">arrow_drop_down</i></a></li>
+              </ul>
+              
+              <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+        <div class="container" >
+            <div class="row" align="center">
+                <h5 class="pageTitle">
+                  <div class="pageTitleText"> Add New Product</div>
+                </h5>
+                </div>
+                <ul class='nav nav-wizard'>
+                  <li ><a href='#step1' data-toggle="tab">Step 1 - Enter Product Details</a></li>
+                  <li><a>Step 2 - Register Manufacturer Warranty</a></li>
+                  <li class='active'><a>Step 3 (optional) - Register Extended Warranty</a></li>
+                </ul>
+                <div class="row">
+                  <div class="col s12">
+                    <div class="card-panel" align="center">
+                        <table class="bordered striped highlight responsive-table">
+                          <thead>
+                            <tr>
+                                <th data-field="name">Available Plans</th>
+                                <th data-field="product">V-GUARD</th>
+                            </tr>
+                          </thead>
+                  
+                          <tbody>
+                            <tr>
+                              <td>Accidental Damage</td>
+                              <td><i class="material-icons" style="color:green">done</i></td>
+                              
+                            </tr>
+                            <tr>
+                              <td>Liquid Split</td>
+                              <td><i class="material-icons" style="color:green">done</i></td>
+                             
+                            </tr>
+                            <tr>
+                              <td>Power Surge Covered</td>
+                              <td><i class="material-icons" style="color:green">done</i></td>
+                             
+                            </tr>
+                            <tr>
+                              <td>Standard Battery Covered</td>
+                              <td><i class="material-icons" style="color:green">done</i></td>
+                             
+                            </tr>
+                            <tr>
+                              <td>Home Charger Covered</td>
+                              <td><i class="material-icons" style="color:green">done</i></td>
+                             
+                            </tr>
+                            <tr>
+                              <td>Free delivery @ Pickup</td>
+                              <td><i class="material-icons" style="color:red">close</i></td>
+                             
+                            </tr>
+                            <tr>
+                              <td>Theft</td>
+                              <td><i class="material-icons" style="color:green">done</i></td>
+                             
+                            </tr>
+                            <tr>
+                              <td>Price</td>
+                              <td>USD 100</td>
+                             
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="row">
+                            <div class="col s6" style="padding:20px;">
+                                <button class="btn waves-effect waves-light left" type="submit" name="action">Submit</button> &nbsp;<span class="buttonbar"> | </span><a href="#" class="buttonbar">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer row">
+                  <p>YARRAA Inc &copy; 2009 <a href="http://www.yarraa.com/tnc.html">User Agreement</a> | <a href="http://www.yarraa.com/privacy.htm">Privacy Policy</a> | <a href="http://www.yarraa.com/copyright.htm">Copyright Policy</a></p>
+                  <p>Use of this site is subject to express terms of use, which prohibit commercial use of this site.</p>
+                  <p>By continuing past this page, you agree to abide by these terms. Drop us your valuable feedback <a href="feedback@yarraa.com">here</a>.</p>
+                  <!--p>This site is best viewed in Microsoft Internet Explorer 6.0+ with a resolution of 1280x800.</p-->
+                </div>
+            </div>
+        </div>
+            <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+            <script type="text/javascript" src="js/angular.min.js"></script>
+            <script type="text/javascript" src="js/materialize.js"></script>
+      </body>
+  </html>
