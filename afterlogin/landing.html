@@ -87,16 +87,8 @@
                <div align="center" class="deviceval">$910</div>
              </div>
              <div class="col s2 actionpane">
-               <a href="#"><img src="imgs/delete.png" />DELETE</a><a href="#"><img src="imgs/details.png" />DETAILS</a>
-               <div id="modal1" class="modal">
-            <div class="modal-content">
-              <h4>Modal Header</h4>
-              <p>A bunch of text</p>
-            </div>
-            <div class="modal-footer">
-              <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-            </div>
-          </div>
+               <a href="#"><img src="imgs/delete.png" />DELETE</a><a href="#" data-target="#modal1" class="modal-trigger"><img src="imgs/details.png" />DETAILS</a>
+               
              </div>
           </div>
           
@@ -156,7 +148,7 @@
                   <a href="#"><img src="imgs/rightarrow.png"/></a>
                 </div>
               </div>
-              <div class="detailedcolumn warrantCol">
+              <div class="detailedcolumn selldev warrantCol">
                 <div class="imgSec">
                     <img src="imgs/sellservice.png" />
                 </div>
@@ -188,25 +180,115 @@
           <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
         </ul>
       </div>
+      
     </div>
           <div id="test2" class="col s12">Test 2</div>
           <div id="test3" class="col s12">Test 3</div>
           <div id="test4" class="col s12">Test 4</div>
         </div>
       </div>
+      <div id="modal1" class="modal">
+        <a href="#" class="modalClose"><img src="imgs/delete.png" /></a>
+            <div class="modaltop row">
+                <div class="col s3 headerImg">
+                <div class="imgContainer"><img src="imgs/iphone.png" /> </div>
+                <div style="padding-top:18px;">OPPO r7</div>
+             </div>
+             <div class="col s6 progressSec" align="center"><p><b>121 days</b> coverage remaining</p>
+                 <div class="progress" >
+                    <div class="determinate" style="width: 70%"></div>
+                </div>
+             </div>
+             <div class="col s3 deviceValSec">
+               <div align="center" class="devicevalab">Device Value</div>
+               <div align="center" class="deviceval">$910</div>
+             </div>
+            </div>
+            <div class="modalDetail">
+                  <table cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td>
+                        <b>Serial No : </b><span> 27398172</span>
+                      </td>
+                      <td>
+                        <b>Purchased from : </b><span> Horway Norman</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b>Brand : </b><span> OPPO</span>
+                      </td>
+                      <td>
+                        <b>Warranty Length : </b><span> 1 year</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b>Type : </b><span> Smartphone</span>
+                      </td>
+                      <td>
+                        <b>Product Cost : </b><span> $900</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b>Device : </b><span> OPPO r7</span>
+                      </td>
+                      <td>
+                        <b>Warranty No : </b><span> 39827183721</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b>Country : </b><span> Singapore</span>
+                      </td>
+                      <td>
+                        <b>Bill No : </b><span> 45923875932</span>
+                      </td>
+                    </tr>
+                  </table>
+              </div>
+            <!--div class="modal-footer">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div-->
+          </div>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/angular.min.js"></script>
       <script type="text/javascript" src="js/materialize.js"></script>
       <script type="text/javascript">
+        $(window).resize(function(){
+         
+            var tempwidth = (($('.collasiblebody').width()/2) - 266);
+            $('.detailSec').css('width',tempwidth);
+         
+        })
         $(document).ready(function(){
-           
+
+           // $('.modal-trigger').leanModal();
+            $('.modal-trigger').click(function(){
+              $('#modal1').openModal();
+            })
+            $('.modalClose').click(function(){
+              $('#modal1').closeModal();
+            })
           $('ul.tabs').tabs({
              indicators: false,
           });
+
+          //imgSec detailSec rightArrow detailedcolumn
+          
+            var tempwidth = (($('.collasiblebody').width()/2) - 236);
+            $('.detailSec').css('width',tempwidth);
+          
+          
+$(window).trigger('resize');
           $('.collapsible .collapsible-header1').each(function(){
-              $(this).click(function(){
-                $(this).next('.collasiblebody').toggle();
+
+              $(this).click(function(e){
+                if(e.target.className != "modal-trigger" || e.target.parent.className != "modal-trigger"){
+                  $(this).next('.collasiblebody').toggle();
+                }
               })
           });
         });

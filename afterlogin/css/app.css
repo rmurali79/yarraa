@@ -73,16 +73,33 @@ select{ display:block;}
 .collasiblebody{ display:none;}
 .detailedRow{border:1px solid #c4c0bb; clear:both; min-height:124px; background-color:#f2ede7}
 .detailedcolumn{width:50%; float:left}
-.detailedRow .imgSec{width:123px; border-right:1px solid #c4c0bb; float:left}
+.detailedRow .imgSec{width:123px; max-width: 123px; border-right:1px solid #c4c0bb; float:left}
 .detailedRow .imgSec img, .detailSec .tinyImg img{ vertical-align: middle;}
-.detailedRow .detailSec{padding:15px; border-right:1px solid #c4c0bb; position:relative; width:375px; min-height:122px; float:left}
+.detailedRow .detailSec{padding:15px; border-right:1px solid #c4c0bb; position:relative; width:375px; max-width: 375px; min-height:122px; float:left}
 .detailSec h5{color:#402d33; text-transform:uppercase; padding:0; margin:0; font-size:18px;}
 .detailSec p{color:#694f57; padding:0;margin:0;}
 .detailSec .tinyImg{position:absolute; top:50px; right:-12px;}
 .detailedRow .monthRemain{width:120px; border-right:1px solid #c4c0bb; text-align:center; min-height:122px; float:left}
 .monthRemain h5{color:#b27c3b; text-align:center; font-size:16px;}
 .monthRemain h2{color:#b27c3b; text-align:center; padding:0; margin:0; font-size:36px;}
-.detailedRow .rightArrow a{width:20px; text-align:center; background-color:#b27c3b; min-height:122px; padding-top:50px; float:left}
+.detailedRow .rightArrow a{width:20px; max-width: 20px; text-align:center; background-color:#b27c3b; min-height:122px; padding-top:50px; float:left}
+
+.modal-content{ border-top-left-radius:5px;}
+
+.modalDetail table td{padding: 20px; width:50%; background-color:#eee; }
+.modalDetail table tr td{border-bottom:1px solid #ccc;}
+.modalDetail table tr td:first-child{border-right:1px solid #ccc;}
+.modaltop{ background-color: #fff; margin-bottom:0;}
+
+.modaltop .headerImg{padding-top:20px; padding-bottom:15px; padding-left:20px; border-right:1px solid #eee;}
+.modaltop .headerImg img{vertical-align:middle;}
+.modaltop .progressSec{border-right:1px solid #eee; padding-bottom:22px;}
+.modalClose{position:absolute; right:5px; top:0px;}
+
+.modaltop .progress{ width:300px;}
+.modaltop .headerImg .imgContainer{float:left; padding-right:15px;}
+.modaltop .deviceValSec{padding-top:10px; padding-left: 10px;}
+
 
 ul.nav-wizard {
   background-color: #f9f9f9;
