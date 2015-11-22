@@ -77,7 +77,7 @@
                 <div class="extendWarranty"><span>Extended Warranty at 10% OFF!</span></div>
                 
              </div>
-             <div class="col s5" align="center"><p style="text-align:center"><b>121 days</b> coverage remaining</p>
+             <div class="col s4" align="center"><p style="text-align:center"><b>121 days</b> coverage remaining</p>
                  <div class="progress" >
                     <div class="determinate" style="width: 70%"></div>
                 </div>
@@ -86,7 +86,7 @@
                <div align="center" class="devicevalab">Device Value</div>
                <div align="center" class="deviceval">$910</div>
              </div>
-             <div class="col s2 actionpane">
+             <div class="col s3 actionpane">
                <a href="#"><img src="imgs/delete.png" />DELETE</a><a href="#" data-target="#modal1" class="modal-trigger"><img src="imgs/details.png" />DETAILS</a>
                
              </div>
@@ -104,13 +104,14 @@
                     <p>Manage your extended warranty and/or accidental damage plan.</p>
                     <div class="tinyImg"><img src="imgs/sheild.png"></div>
                 </div>
+                <div class="rightArrow" align="center">
+                  <a href="#"><img src="imgs/rightarrow.png"/></a>
+                </div>
                 <div class="monthRemain" align="center">
                   <h5 align="center">Months remaining</h5>
                   <h2 >24</h2>
                 </div>
-                <div class="rightArrow" align="center">
-                  <a href="#"><img src="imgs/rightarrow.png"/></a>
-                </div>
+                
               </div>
               <div class="detailedcolumn servicecenter">
                 <div class="imgSec">
@@ -121,13 +122,14 @@
                     <p>Locate the nearest service centre for your product, or make an Instant Fix.</p>
                     <div class="tinyImg"><img src="imgs/marker.png"></div>
                 </div>
+                <div class="rightArrow">
+                  <a href="#"><img src="imgs/rightarrow.png"/></a>
+                </div>
                 <div class="monthRemain" align="center">
                   <h5 align="center">Centres near you</h5>
                   <h2>31</h2>
                 </div>
-                <div class="rightArrow">
-                  <a href="#"><img src="imgs/rightarrow.png"/></a>
-                </div>
+                
               </div>
             </div>
             <div style="border-top:0;" class="detailedRow">
@@ -140,13 +142,14 @@
                     <p>Browse through support documents and instructional videos for your product.</p>
                     <div class="tinyImg"><img src="imgs/openbook.png"></div>
                 </div>
+                <div class="rightArrow" align="center">
+                  <a href="#"><img src="imgs/rightarrow.png"/></a>
+                </div>
                 <div class="monthRemain" align="center">
                   <h5 align="center">References available</h5>
                   <h2>12</h2>
                 </div>
-                <div class="rightArrow" align="center">
-                  <a href="#"><img src="imgs/rightarrow.png"/></a>
-                </div>
+                
               </div>
               <div class="detailedcolumn selldev warrantCol">
                 <div class="imgSec">
@@ -157,13 +160,14 @@
                     <p>Changing your device? Sell your current device at the best rate possible.</p>
                     <div class="tinyImg"><img src="imgs/money.png"></div>
                 </div>
+                <div class="rightArrow" align="center">
+                  <a href="#"><img src="imgs/rightarrow.png"/></a>
+                </div>
                 <div class="monthRemain" align="center">
                   <h5 align="center">Current device value</h5>
                   <h2>$ 820</h2>
                 </div>
-                <div class="rightArrow" align="center">
-                  <a href="#"><img src="imgs/rightarrow.png"/></a>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -279,14 +283,14 @@
           //imgSec detailSec rightArrow detailedcolumn
           
             var tempwidth = (($('.collasiblebody').width()/2) - 236);
-            $('.detailSec').css('width',tempwidth);
+          //  $('.detailSec').css('width',tempwidth);
           
           
-$(window).trigger('resize');
+
           $('.collapsible .collapsible-header1').each(function(){
 
               $(this).click(function(e){
-                if(e.target.className != "modal-trigger" || e.target.parent.className != "modal-trigger"){
+                if(e.target.className != "modal-trigger" ){
                   $(this).next('.collasiblebody').toggle();
                 }
               })
