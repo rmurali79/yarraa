@@ -104,14 +104,14 @@
                     <p>Manage your extended warranty and/or accidental damage plan.</p>
                     <div class="tinyImg"><img src="imgs/sheild.png"></div>
                 </div>
-                <div class="rightArrow" align="center">
-                  <a href="#"><img src="imgs/rightarrow.png"/></a>
-                </div>
+                
                 <div class="monthRemain" align="center">
                   <h5 align="center">Months remaining</h5>
                   <h2 >24</h2>
                 </div>
-                
+                <div class="rightArrow" align="center">
+                  <a href="#"><img src="imgs/rightarrow.png"/></a>
+                </div>
               </div>
               <div class="detailedcolumn servicecenter">
                 <div class="imgSec">
@@ -122,14 +122,14 @@
                     <p>Locate the nearest service centre for your product, or make an Instant Fix.</p>
                     <div class="tinyImg"><img src="imgs/marker.png"></div>
                 </div>
-                <div class="rightArrow">
-                  <a href="#"><img src="imgs/rightarrow.png"/></a>
-                </div>
+                
                 <div class="monthRemain" align="center">
                   <h5 align="center">Centres near you</h5>
                   <h2>31</h2>
                 </div>
-                
+                <div class="rightArrow">
+                  <a href="#"><img src="imgs/rightarrow.png"/></a>
+                </div>
               </div>
             </div>
             <div style="border-top:0;" class="detailedRow">
@@ -142,12 +142,13 @@
                     <p>Browse through support documents and instructional videos for your product.</p>
                     <div class="tinyImg"><img src="imgs/openbook.png"></div>
                 </div>
-                <div class="rightArrow" align="center">
-                  <a href="#"><img src="imgs/rightarrow.png"/></a>
-                </div>
+                
                 <div class="monthRemain" align="center">
                   <h5 align="center">References available</h5>
                   <h2>12</h2>
+                </div>
+                <div class="rightArrow" align="center">
+                  <a href="#"><img src="imgs/rightarrow.png"/></a>
                 </div>
                 
               </div>
@@ -160,14 +161,14 @@
                     <p>Changing your device? Sell your current device at the best rate possible.</p>
                     <div class="tinyImg"><img src="imgs/money.png"></div>
                 </div>
-                <div class="rightArrow" align="center">
-                  <a href="#"><img src="imgs/rightarrow.png"/></a>
-                </div>
+                
                 <div class="monthRemain" align="center">
                   <h5 align="center">Current device value</h5>
                   <h2>$ 820</h2>
                 </div>
-                
+                <div class="rightArrow" align="center">
+                  <a href="#"><img src="imgs/rightarrow.png"/></a>
+                </div>
               </div>
             </div>
           </div>
@@ -263,8 +264,8 @@
       <script type="text/javascript">
         $(window).resize(function(){
          
-            var tempwidth = (($('.collasiblebody').width()/2) - 266);
-            $('.detailSec').css('width',tempwidth);
+          //  var tempwidth = (($('.collasiblebody').width()/2) - 266);
+           // $('.detailSec').css('width',tempwidth);
          
         })
         $(document).ready(function(){
@@ -281,9 +282,13 @@
           });
 
           //imgSec detailSec rightArrow detailedcolumn
-          
-            var tempwidth = (($('.collasiblebody').width()/2) - 236);
-          //  $('.detailSec').css('width',tempwidth);
+          if(window.innerWidth <= 1186){
+            var midDiv = 294;
+          }else{
+            var midDiv = 300
+          }
+          var tempwidth = (($('.collasiblebody').width()/2) - midDiv);
+          $('.detailSec').css('width',tempwidth);
           
           
 
