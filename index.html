@@ -465,7 +465,7 @@
                 </div>
                  <div class="col-xs-6" style="padding-top:10px; color:#5b3d19">
                   | &nbsp;&nbsp;<i class="fa fa-unlock-alt"></i>
-                    <a class="login-form-reset" href="#">Forgot password?</a>
+                    <a class="login-form-reset" id="forgetpass" href="#">Forgot password?</a>
                    </div>
                 </div>
               </form>
@@ -480,6 +480,51 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+<!--LOGIN POPUP/MODAL -->
+<div class="modal loginModal fade" id="forgetModal" role="dialog" tabindex="-1" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+    <!--<div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="myModalLabel">Yarraa Login</h4>
+    </div>-->
+      <div class="modal-body">
+        <button type="button" title="Close" class="closeButton" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+          <span class="hide">Close</span>
+        </button>
+        <div id="yarraa-login" class="yarraa-login">
+          <div class="login-content">
+            <div class="login-form">
+              <div class="login-form-header" align="center">
+                <img src="img/signuplogo.jpg" class="img-responsive" alt="yarraa">
+              </div>
+
+              <form class="login-form-main" data-toggle="validator" role="form">
+                <div class="form-group">
+                  <p>To Reset Please fill up your Email ID below :</p>
+                  <input type="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+                 
+                <div class="row">
+                  <div class="col-xs-6">
+                    <button type="submit" class="btn btn-default btn-block" ><i class="fa fa-check"></i> Submit</button>
+                </div>
+                 <div class="col-xs-6" style="padding-top:10px; color:#5b3d19">
+                  | &nbsp;&nbsp;<i class="fa fa-unlock-alt"></i>
+                    <a class="login-form-reset" id="cancelForget" href="#">Cancel</a>
+                   </div>
+                </div>
+              </form>
+              
             </div>
           </div>
         </div>
@@ -557,12 +602,21 @@
 			  
 			  $('#loginTrigger').click(function(){
 			    $('#loginModal').modal({backdrop: 'static', keyboard: false}) 
-			  })
+			  });
+        $('#forgetpass').click(function(){
+          $('#loginModal').modal('hide');
+          $('#forgetModal').modal({backdrop: 'static', keyboard: false}) 
+        });
+        
 			   $('#signupTrigger').click(function(){
 			    $('#signupModal').modal({backdrop: 'static', keyboard: false}) 
 			  })
 				
-				$("#yarraa-brands").owlCarousel({
+				$('#cancelForget').click(function(){
+          $('#forgetModal').modal('hide');
+          $('#loginModal').modal({backdrop: 'static', keyboard: false}) 
+        });
+        $("#yarraa-brands").owlCarousel({
 					autoPlay: 3000, //Set AutoPlay to 3 seconds
 					items : 4,
 					itemsDesktop : [1199,3],
