@@ -247,7 +247,7 @@ a.y-fb { background: url(../../img/y-facebook.png) no-repeat center center;}
     left: 306px;
 }
 
-#maps a {
+#maps li > a {
 	color: #0641AA;
     text-decoration: none;
     outline: none;
@@ -264,6 +264,8 @@ a.y-fb { background: url(../../img/y-facebook.png) no-repeat center center;}
     text-indent: -9999px;
     border: 1px solid #fff;
 }
+.popover.bottom{width:300px;}
+.popover.bottom h3.popover-title{margin: 0;}
 address {
     font-style: normal;
     margin: 0 0 50px 0;
@@ -277,6 +279,8 @@ address span.wrapper {
     display: block;
     border: 1px solid #ccc;
 }
+.nav-tabs>li>a, .nav-pills>li>a{color:#4e3516;}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{background-color: #4e3516;}
 /*---------- RESPONSIVE ----------*/
 
 @media(min-width: 1800px) {
