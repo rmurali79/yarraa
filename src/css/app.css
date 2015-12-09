@@ -211,7 +211,72 @@ a.y-fb { background: url(../../img/y-facebook.png) no-repeat center center;}
     color: #573c18;
     margin-top: 1em;
     margin-bottom: 0.6em;}
+    .map{ padding: 15px 10px 10px;}
+#maps {
+    background: #fff url(../../img/illus_world-map_01.gif) 0 0 no-repeat;
+    width: 440px;
+    height: 270px;
+    margin: 0 0 30px 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    border: 1px solid #EEE;
+}
+#maps li {
+    width: 5px;
+    height: 5px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: inline;
+}
+#maps .usa {
+    top: 107px;
+    left: 60px;
+}
+#maps .china {
+    top: 118px;
+    right: 90px;
+}
+#maps .asia-hq {
+    bottom: 110px;
+    right: 98px;
+}
+#maps .india {
+    top: 138px;
+    left: 306px;
+}
 
+#maps a {
+	color: #0641AA;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1px;
+    line-height: 5px;
+    background: #c00;
+    width: 7px;
+    height: 7px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: block;
+    text-indent: -9999px;
+    border: 1px solid #fff;
+}
+address {
+    font-style: normal;
+    margin: 0 0 50px 0;
+    display: block;
+}
+address span.wrapper {
+    line-height: 22px;
+    background: #EFEFEF;
+    width: 400px;
+    padding: 10px 20px;
+    display: block;
+    border: 1px solid #ccc;
+}
 /*---------- RESPONSIVE ----------*/
 
 @media(min-width: 1800px) {
