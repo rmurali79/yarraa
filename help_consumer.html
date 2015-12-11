@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YARRAA</title>
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400italic,600,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/Ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="src/css/app.css" rel="stylesheet">
+    <link href="src/css/login.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top-scroll">
+  	<!--/.preloader-->
+  	<div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top-scroll navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="img/yarraa-logo.png" class="yarraa-logo"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+        	<form class="navbar-form navbar-right hidden-xs">
+            <button type="button" class="btn btn-default btn-signup" id="signupTrigger">SIGN UP</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">About Yarra</a></li>
+            <li><a href="index.html">Key Services</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="faqs.html">FAQ</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+            <li><a href="#" id="loginTrigger">Login</a></li>
+          </ul>
+          <form class="navbar-form navbar-right visible-xs">
+            <button type="button" class="btn btn-default btn-signup">SIGN UP</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <header class="header2">
+    	
+    </header>
+    <div class="wrapper">
+      <section class="about-yarraa">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Help Center</h2>
+               <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#consumer" aria-controls="consumer" role="tab" data-toggle="tab">Consumer</a></li>
+                 
+                  
+                </ul>
+              <div class="tab-content" style="padding-top:20px;">
+               
+                <div role="tabpanel" class="tab-pane fade in active" id="consumer">
+                  <div class="col-md-3">
+                      <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation" class="active"><a href="#Retailers" aria-controls="Retailers" role="tab" data-toggle="tab">Update profile</a></li>
+                        <li role="presentation"><a href="#servivecenters" aria-controls="servivecenters" role="tab" data-toggle="tab">Change password</a></li>
+                        <li role="presentation"><a href="#Distributors" aria-controls="Distributors" role="tab" data-toggle="tab">Why ZIP code?</a></li>
+                        <li role="presentation"><a href="#addproduct" aria-controls="addproduct" role="tab" data-toggle="tab">Add a product</a></li>
+                        <li role="presentation"><a href="#deleteproduct" aria-controls="deleteproduct" role="tab" data-toggle="tab">Delete a product</a></li>
+                        <li role="presentation"><a href="#findproduct" aria-controls="findproduct" role="tab" data-toggle="tab">Find a product</a></li>
+                        <li role="presentation"><a href="#editproduct" aria-controls="editproduct" role="tab" data-toggle="tab">Edit  product information</a></li>
+                        <li role="presentation"><a href="#trackproduct" aria-controls="trackproduct" role="tab" data-toggle="tab">Track  warranty expiration</a></li>
+                        <li role="presentation"><a href="#createSR" aria-controls="createSR" role="tab" data-toggle="tab">Create a service request</a></li>
+                        <li role="presentation"><a href="#locateSC" aria-controls="locateSC" role="tab" data-toggle="tab">Locate a service center</a></li>
+                        <li role="presentation"><a href="#Quotation" aria-controls="Quotation" role="tab" data-toggle="tab">Quotation</a></li>
+                        <li role="presentation"><a href="#revokeSR" aria-controls="revokeSR" role="tab" data-toggle="tab">Revoke service request</a></li>
+                        <li role="presentation"><a href="#anotherlocality" aria-controls="anotherlocality" role="tab" data-toggle="tab">Show another locality</a></li>
+                        <li role="presentation"><a href="#trackSR" aria-controls="trackSR" role="tab" data-toggle="tab">Track  service requests</a></li>
+                      </ul>
+                      </div>
+                      <div class="col-md-9">
+ <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="Retailers">
+<h3>How can I update my personal information?</h3>
+<p>To update any personal information (address, telephone number, etc.), click on My Account. This will lead you to a screen where you can add and/or change your personal information:</p>
+<div class="illustration"><span class="zoom"></span>
+  <a class="single_image" href="img/screenshot_customer_update-profile_01.gif" title="Update My Profile"><img src="img/screenshot_customer_update-profile_01.gif" class="img-responsive" alt="Update My Profile" /></a>
+</div>
+<p>Only your <strong>First Name</strong>, <strong>Last Name</strong> (Family Name), <strong>Country</strong> and <strong>ZIP Code</strong> (or Postal Code) are required. The <strong>Image Upload</strong> is simply a personalization option: you may upload an image to appear in the far upper right hand corner of your screen whenever you log on to YARRAA. The <strong>Secret Question and Answer</strong> are an added security measure; if you fill in those fields, you will be prompted with the security question and required to enter the answer when you log in. If you do not wish to add that layer of security, simply leave those fields blank.</p>
+<p>When you are done adding or changing information, click on <strong>Update</strong> and the screen will refresh with your updated information. (If there is any problem with the new information, <span class="errormsg">red text</span> will appear next to the field where the problem occurred, explaining what's wrong and how you can fix it.)</p>
+
+    </div>
+    <div role="tabpanel" class="tab-pane" id="servivecenters">
+     <h3>How do I change my password?</h3>
+<p>1. Click on <strong>Change My Password</strong> in the upper left hand corner of your screen. You will be directed to this page:</p>
+<div class="illustration">
+  <img src="img/screenshot_customer_change-password_02.gif" class="img-responsive"  alt="Change My Password" />
+</div>
+<p>Enter the old password and the <strong>New Password</strong> as directed. To avoid accidentally entering a misspelled word, you must enter the new password a second time in the <strong>Confirm Password</strong> field.</p>
+<p>2. Click <strong>Submit</strong>. Provided the new password matches in the second and third field, you will then see the above screen again, with the fields empty and with &quot;<strong>Password Successfully Changed</strong>&quot; across the top of the screen.</p>
+</div>
+    <div role="tabpanel" class="tab-pane" id="Distributors">
+      <h3>Why must I include my Postal Code/ZIP Code in my account information?</h3>
+<p>Convenience is an important element of YARRAA's services. We want to provide you with the best options for getting the fastest and most dependable service for all your household products. In order to achieve this goal, we need to know where you are so that we can provide you with the nearest service centers. We do this using Google Maps technology, which identifies locations in most parts of the world through their postal codes or ZIP codes. Without this information, we may not be able to identify a service center that meets your needs and is located acceptably close to you.</p>
+<p>Please rest assured that, as with all personal information, YARRAA will never make your postal/ZIP code available to any third party without your express permission. Our own staff will not have access to your address except in cases where it is directly relevant to serving your needs.</p>
+</div>
+<div role="tabpanel" class="tab-pane" id="addproduct">
+      <h3>How do I add a product?</h3>
+<p>1. Go to <strong>Consumers Home</strong>, then <strong>Add New Product</strong>. You should then see a field labeled &quot;<strong>Register Your Product Here</strong>&quot; on the right-hand side of the screen:</p>
+<div class="illustration"><span class="zoom"></span>
+  <a class="single_image" href="img/screenshot_customer_add-product_01.gif" title="Add New Product 1"><img src="img/screenshot_customer_add-product_01.gif" class="img-responsive"  alt="Add New Product 1" /></a>
+</div>
+<p>2. Both the <strong>Serial No.</strong> and the <strong>Brand</strong> are required. The serial number can almost always be found somewhere on the package or on the item itself. (A UPC number or IMEI number is acceptable in lieu of the serial number.)</p>
+<p>3. After you click <strong>Next</strong>, the following screen will appear:</p>
+<div class="illustration"><span class="zoom"></span>
+  <a class="single_image" href="img/screenshot_customer_add-product_02.gif" title="Add New Product 2"><img src="img/screenshot_customer_add-product_02.gif" class="img-responsive"  alt="Add New Product 2" /></a>
+</div>
+<p>All fields marked with an asterisk are required. Although the others are not required, the more information you supply, the better YARRAA will be able to serve you. The <strong>Model</strong> name and/or number will almost always be found on the package, and often on the item itself. The <strong>Warranty Number</strong> and <strong>Bill No.</strong> can usually be found on your receipt. You may also save copies of your receipt, invoice and warranty policy as <strong>Attachment</strong>s.</p>
+<p>4. Click <strong>Submit</strong>. You should then see all the information you entered immediately:</p>
+<div class="illustration"><span class="zoom"></span>
+  <a class="single_image" href="img/screenshot_customer_add-product_03.gif" title="Add New Product 3"><img class="img-responsive" src="img/screenshot_customer_add-product_03.gif" alt="Add New Product 3" /></a>
+</div>
+<p>If any of the information you enter needs to be updated at a later date, simply click on the <strong>Edit Product</strong> tab and repeat the above steps. </p>
+</div>
+<div role="tabpanel" class="tab-pane" id="deleteproduct">
+      <h3>How do I delete a product?</h3>
+<p>To delete a product, simply locate it on your <strong>My Products List</strong>, and click on the check-box next to it:</p>
+<div class="illustration">
+  <img src="img/screenshot_customer_delete-product_01.gif" class="img-responsive"  alt="Delete Product" />
+</div>
+<p>Click on <strong>Delete</strong>. You will then be asked if you are sure you wish to delete the product. Click <strong>Yes</strong>. Your screen should then revert to the <strong>My Products List</strong>, without the deleted product.</p>
+</div>
+<div role="tabpanel" class="tab-pane" id="findproduct">
+     <h3>How do I find a product in my products list?</h3>
+<p>You can search through your products list by Brand, Product Type, Serial Number, or Model. To do this, go to the <strong>Search</strong> function at the upper left hand corner of the <strong>Consumer Home</strong> screen, and choose the criterion by which you want to search. Then, enter the brand, model, type or number you wish to search for in the field. Click <strong>Search</strong>. Your <strong>My Products List</strong> will then show all registered items that fit the terms of your search.</p>
+<div class="illustration"><span class="zoom"></span>
+  <a class="single_image" href="img/screenshot_customer_find-product_01.gif" title="Find a product"><img class="img-responsive"  src="img/screenshot_customer_find-product_01.gif" alt="Find a product" /></a>
+</div>
+</div>
+<div role="tabpanel" class="tab-pane" id="editproduct">
+      <h3>How do I edit the product information for a product already in my list?</h3>
+<p>Choose the product from your <strong>My Products List</strong>. The <strong>Product Information</strong> field will then show the existing information for that product. Click on the <strong>Edit Product</strong> tab. You can then change, add or delete any information you like except for the brand name, model, serial number, product, or the warranty dates. After making the desired changes, click <strong>Update</strong> at the bottom of the field. The changes should then appear.</p>
+<div class="illustration"><span class="zoom"></span>
+  <a class="single_image" href="img/screenshot_customer_edit-product_01.gif" title="Edit product information"><img class="img-responsive" src="img/screenshot_customer_edit-product_01.gif" alt="Edit product information" /></a>
+</div>
+
+</div>
+<div role="tabpanel" class="tab-pane" id="trackproduct">
+      <h3>How can I track my warranty expiration dates?</h3>
+<p>Yarraa does this for you with all your registered items. A list of your warranties, and the number of days left for each of them, is found under the <strong>Warranty Alert</strong> heading on your <strong>Consumer Home</strong> screen. If you are concerned about impending expiration dates, you can sort your items by clicking on the arrow icon next to the <strong>Warranty Remaining Days</strong> heading. You can then choose to show items expiring in one year, one month, or expired already. Note that the list will then show <strong>only</strong> those items; to see all your warranties again, you must choose <strong>Show All</strong>.</p>
+<div class="illustration"><span class="zoom"></span>
+  <img src="img/screenshot_customer_track-warranty_01.gif" class="img-responsive"  alt="Edit product information" />
+</div>
+
+</div>
+<div role="tabpanel" class="tab-pane" id="createSR">
+      <h3>How do I create a service request?</h3>
+<p>1. On your <strong>My Products List</strong>, click on the name of the product for which you want to create a service request. The <strong>Product Information</strong> for that item will then appear on the right hand side of your screen.</p>
+<div class="illustration"><span class="zoom"></span>
+  <a class="single_image" href="img/screenshot_customer_request-service_01.gif" title="Service Request 1"><img src="img/screenshot_customer_request-service_01.gif" class="img-responsive" alt="Service Request 1" /></a>
+</div>
+<p>2. Click on the <strong>Service Request</strong> tab. You will then see the following:</p>
+<div class="illustration"><span class="zoom"></span>
+  <a class="single_image" href="img/screenshot_customer_request-service_02.gif" title="Service Request 2"><img class="img-responsive" src="img/screenshot_customer_request-service_02.gif" alt="Service Request 2" /></a>
+</div>
+<p>All fields marked by an asterisk are required. Once you select your <strong>Country</strong> of residence, the page will reload; you will then have a list of authorized service centers in your country to choose from. <strong>Authorized Service Centers</strong> is required field; however, if you prefer to use an other service center, you may choose &quot;<strong>Other</strong>&quot; from the list of authorized service centers. (Note that <strong>Failure Desc</strong> is a required field; this will enable the service center of your choice to assist you much more efficiently.) When all required information is entered, click <strong>Submit</strong>.</p>
+<p>3. The information you entered will be forwarded immediately to the service center of your choice. You can then bring your product to the service center, mail it there, or arrange to have it picked up in arrangement with each center's policy. (The service center may contact you directly with further instructions.) You can print out a copy of the service request for your records and/or to show to the service center staff. After you submit the request, the item will be listed under <strong>My Service Requests</strong>, at the bottom of the <strong>Consumers Home</strong> page. The <strong>Service Status</strong> field tells you whether the product is still being worked on (<strong>Open</strong>) and will serve as notification when it has been fixed.</p>
+
+
+
+</div>
+<div role="tabpanel" class="tab-pane" id="locateSC">
+      <h3>How do I locate a service center?</h3>
+<p>1. The first step is to begin the process of creating a service request. After you enter the country in which you wish to find a service center, the page should refresh automatically.</p>
+<div class="illustration"><span class="zoom"></span>
+  <a class="single_image" href="img/screenshot_customer_locate-service-center_01.gif"  class="img-responsive" title="Locate a Service Center"><img src="img/screenshot_customer_locate-service-center_01.gif"  class="img-responsive" alt="Locate a Service Center" /></a>
+</div>
+<p>2. Under <strong>Service Centers Location</strong> at the bottom right hand corner of your screen, you will find a list of authorized service centers for the product you chose in Step 1:</p>
+<p>Note that <em>authorized</em> service centers are denoted with the <span class="infomsg1">blue icon</span>, <em>other</em> service centers are denoted with the <span class="infomsg2">red icon</span>, and <em>registered</em> Yarraa users are denoted with the <img src="img/icon_yarraa.gif" alt="Y icon" /> icon. While other service centers are often less expensive, some warranties are valid only for service at authorized centers. To locate each center, click on the name. A local map will then appear with the location of the service center highlighted.</p>
+
+</div>
+<div role="tabpanel" class="tab-pane" id="Quotation">
+      <h3>What is a Quotation?</h3>
+<p>For some products, you can get an estimate on the price of services before submitting a service request. This is called a <strong>quotation</strong>.</p>
+<p>To get a quotation, click on the product you're interested in servicing in your <strong>My Products List</strong>. The product details will then appear under <strong>Product Information</strong> on the right hand side of the screen. Click on the <strong>Quotation</strong> tab.</p>
+<p>If quotation services are available for that company, you will be directed to a screen that will prompt you to identify the desired service and choose a service center. When you click <strong>Submit</strong>, the service center will receive your request for a quotation, and will reply shortly through YARRAA with a price estimate for its services. You will be notified of the response and presented with an offer on your <strong>Product Information</strong> screen. To accept the offer and initiate the service request, click <strong>Approve</strong>. If the price is not acceptable, click <strong>Regret</strong>. </p>
+<p>If quotation services are not available, the message &quot;<strong>Quotation not applicable</strong>&quot; will appear on your <strong>Product Information</strong> screen.</p>
+</div>
+<div role="tabpanel" class="tab-pane" id="revokeSR">
+     <h3>How do I revoke a service request?</h3>
+<p>A service request can only be revoked from the account that created it. If you filed a service request through a retailer, only the retailer can revoke it.</p>
+<p>To revoke a service request you filed directly through YARRAA, go to the <strong>My Service Requests</strong> list at the bottom of the <strong>Consumers Home</strong> page. Click on the name of the product for which you wish to cancel the service request. The service request will then appear in the upper right hand corner of the screen:</p>
+<div class="illustration"><span class="zoom"></span>
+  <a class="single_image" href="img/screenshot_customer_revoke-service-request_01.gif" title="Revoke Service Request"><img src="img/screenshot_customer_revoke-service-request_01.gif" alt="Revoke Service Request" /></a>
+</div>
+<p>To cancel the request, click <strong>Revoke</strong>. If you only wish to edit the request, you may make any changes you wish at this point and then click <strong>Update</strong>. Note that the <strong>Revoke</strong> and <strong>Update</strong> buttons will only appear in cases where you have the authority to change or cancel the request (i.e. requests you initiated directly from your YARRAA account). Any changes or cancellations you make will be submitted directly to the service center; you need take no further action.</p>
+</div>
+<div role="tabpanel" class="tab-pane" id="anotherlocality">
+      <h3>I want the Service Centers Location map to show another locality. How do I do this?</h3>
+<p>The map defaults to your current location, regardless of whether you live or work there. If you want to search for service centers in another location, simply choose a search criterion (City, Country, ZIP Code) on the <strong>Search By</strong> icon, and then enter the city, country or code in the field next to it. A new map will then appear showing the location you have requested.</p>
+
+
+</div>
+<div role="tabpanel" class="tab-pane" id="trackSR">
+      <h3>How can I track the progress of my service requests?</h3>
+<p>All open requests are listed in the <strong>My Service Requests</strong> field, at the lower left-hand corner of the screen. The <strong>service status</strong> column indicates the status of each request: <strong>Requested</strong> (the request has been received by the service center, but no action has been taken yet); <strong>In Progress</strong> (repairs have begun); <strong>Ready for Collection</strong> (repairs are complete).</p>
+<div class="illustration"><img src="img/screenshot_customer_track-service-request_01.gif" class="img-responsive" alt="Track service requests" />
+</div>
+
+
+</div>
+  </div></div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+      	<section class="quick-links">
+        	<div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6 quick-links-inner">
+                <h5>Quick Links</h5>
+                <div class="col-md-3 col-sm-6">
+                  <h6>Company</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About YARRAA</a></li>
+                    <li><a href="#">Key Services</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <h6>Business Users</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Retailers</a></li>
+                    <li><a href="#">Collection Points</a></li>
+                    <li><a href="#">Distributors</a></li>
+                    <li><a href="#">Service Centers</a></li>
+                    <li><a href="#">Manufacturers</a></li>
+                    <li><a href="#">Recyclers</a></li>
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Appliances insurance</a></li>
+                    <li><a href="#">IT Products insurance</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <h6>Using this site</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="termsandcondition.html">User Agreement</a></li>
+                    <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                    <li><a href="copyright.html">Copyright Policy</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                	<h6>Language</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="chn-flg">中文</a></li>
+                    <li><a href="#" class="de-flg">Deutsche</a></li>
+                    <li><a href="#" class="jpn-flg">Japanese</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 social-links">
+                <h5>Social</h5>
+                <div class="col-md-12">
+                	<h6>Find us on</h6>
+                	<ul class="list-inline">
+                  	<li><a href="#" class="y-ico y-fb"></a></li>
+                    <li><a href="#" class="y-ico y-in"></a></li>
+                    <li><a href="#" class="y-ico y-ln"></a></li>
+                    <li><a href="#" class="y-ico y-tw"></a></li>
+                    <li><a href="#" class="y-ico y-gp"></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 yarraa-app">
+              	<h5>Yarraa App</h5>
+                <div class="col-md-12">
+                	<ul class="list-unstyled">
+                  	<li><a href="#" class="btn-store btn-apple-store"></a></li>
+          					<li><a href="#" class="btn-store btn-google-store"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div><!--/.container-fluid-->
+        </section>
+        
+        <section class="payment-methods">
+        	<div class="container">
+          	<div class="row">
+              <div class="col-md-12">
+              	<ul class="list-inline">
+                	<li><a href="#"><img src="img/pm-visa.png" alt="Visa Card"></a></li>
+                  <li><a href="#"><img src="img/pm-master-card.png" alt="Master Card"></a></li>
+                  <li><a href="#"><img src="img/pm-ae.png" alt="American Express"></a></li>
+                  <li><a href="#"><img src="img/pm-jcb.png" alt="JCB"></a></li>
+                  <li><a href="#"><img src="img/pm-paypal.png" alt="Paypal"></a></li>
+                </ul>
+              	<ul class="list-inline">
+                	<li><a href="#"><img src="img/security.png" alt="Secured by Net trust"></a></li>
+                </ul>
+              	<ul class="list-inline">
+                  <li><a href="#"><img src="img/rrr.png" alt="Reuse Reduce Recycle"></a></li>
+                </ul>
+              	<ul class="list-inline">
+                	<li><a href="#"><img src="img/technology-innovation.png" alt="Technology innovation program award from"></a></li>
+                  <li><a href="#"><img src="img/spring-singapore.png" alt="Spring Singapore"></a></li>
+                  <li><a href="#"><img src="img/ida.png" alt="ida"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="copy-rights">
+        	<div class="container">
+        		<p>Copyright <i class="fa fa-copyright"></i> 2015 Yarraa<i class="fa fa-registered"></i> Inc. All Rights Reserved</p>
+          </div>
+        </section>
+      </footer>
+      
+		</div><!--/.wrapper-->
+    
+<!--LOGIN POPUP/MODAL -->
+<div class="modal loginModal fade" id="loginModal" role="dialog" tabindex="-1" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+    <!--<div class="modal-header">
+    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    	<h4 class="modal-title" id="myModalLabel">Yarraa Login</h4>
+    </div>-->
+      <div class="modal-body">
+        <button type="button" title="Close" class="closeButton" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+          <span class="hide">Close</span>
+        </button>
+        <div id="yarraa-login" class="yarraa-login">
+          <div class="login-content">
+            <div class="login-form">
+              <div class="login-form-header" align="center">
+                <img src="img/signuplogo.jpg" class="img-responsive" alt="yarraa">
+              </div>
+              <form class="login-form-main" data-toggle="validator" role="form">
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="password" placeholder="Password" required>
+                </div>		
+                <div class="row">
+                  <div class="col-xs-6">
+                    <button type="submit" class="btn btn-default btn-block" ><i class="fa fa-check"></i> Sign In</button>
+                </div>
+                 <div class="col-xs-6" style="padding-top:10px; color:#5b3d19">
+                  | &nbsp;&nbsp;<i class="fa fa-unlock-alt"></i>
+                    <a class="login-form-reset" id="forgetpass" href="#">Forgot password?</a>
+                   </div>
+                </div>
+              </form>
+              <div class="login-form-footer" style="padding:1rem; padding-top:0;">
+                <h3 align="center" style="padding-top:0; padding-bottom:15px;">Do you want to Creating an account?</h3>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <button type="button" class="btn btn-default btn-block"><i class="fa fa-user"></i> Sign Up as Consumer</button>
+                  </div>
+                  <div class="col-xs-6" align="right">
+                    <button type="button" class="btn btn-default btn-block" ><i class="fa fa-group"></i> Sign Up as Corporate</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+<!--LOGIN POPUP/MODAL -->
+<div class="modal loginModal fade" id="forgetModal" role="dialog" tabindex="-1" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+    <!--<div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="myModalLabel">Yarraa Login</h4>
+    </div>-->
+      <div class="modal-body">
+        <button type="button" title="Close" class="closeButton" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+          <span class="hide">Close</span>
+        </button>
+        <div id="yarraa-login" class="yarraa-login">
+          <div class="login-content">
+            <div class="login-form">
+              <div class="login-form-header" align="center">
+                <img src="img/signuplogo.jpg" class="img-responsive" alt="yarraa">
+              </div>
+
+              <form class="login-form-main" data-toggle="validator" role="form">
+                <div class="form-group">
+                  <p>To Reset Please fill up your Email ID below :</p>
+                  <input type="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+                 
+                <div class="row">
+                  <div class="col-xs-6">
+                    <button type="submit" class="btn btn-default btn-block" ><i class="fa fa-check"></i> Submit</button>
+                </div>
+                 <div class="col-xs-6" style="padding-top:10px; color:#5b3d19">
+                  | &nbsp;&nbsp;<i class="fa fa-unlock-alt"></i>
+                    <a class="login-form-reset" id="cancelForget" href="#">Cancel</a>
+                   </div>
+                </div>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<div class="modal signupModal fade" id="signupModal" role="dialog" tabindex="-1" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+    <!--<div class="modal-header">
+    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    	<h4 class="modal-title" id="myModalLabel">Yarraa Login</h4>
+    </div>-->
+      <div class="modal-body">
+        <button type="button" title="Close" class="closeButton" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+          <span class="hide">Close</span>
+        </button>
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="login-form-header" align="left" style="padding-top:0; padding-bottom:2rem">
+              <img src="img/signuplogo.jpg" class="img-responsive" alt="yarraa">
+            </div>
+            <div><img src="img/cartimg.jpg"></img></div>
+          </div>
+          <div class="col-xs-6">
+            <div id="yarraa-login" class="yarraa-login">
+              <div class="login-content">
+                <div class="login-form">
+                 
+                  <form class="login-form-main" data-toggle="validator" role="form" style="text-align:center;">
+                     <h5 style="color:#5b3d19">Create your Yarraa account and start</h6>
+                  <h4 style="color:#5b3d19; font-weight:bold;">managing all devices in 1 place!</h3>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="telephone" placeholder="Telephone" required>
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control"><option>Country</option></select>
+                    </div>
+                    <button type="submit" class="btn btn-default btn-block" ><i class="fa fa-check"></i> SIGN UP NOW</button>
+                    
+                  </form>
+                 <div align="center"> <a href="#">Creating an account for your Company?</a></div>
+                 <div align="center">   <a href="#">Already have an account?</a></div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div> 
+    
+    
+    
+		<script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <script>
+			$(document).ready(function() {
+			  
+			  $('#loginTrigger').click(function(){
+			    $('#loginModal').modal({backdrop: 'static', keyboard: false}) 
+			  });
+        $('#forgetpass').click(function(){
+          $('#loginModal').modal('hide');
+          $('#forgetModal').modal({backdrop: 'static', keyboard: false}) 
+        });
+        
+			   $('#signupTrigger').click(function(){
+			    $('#signupModal').modal({backdrop: 'static', keyboard: false}) 
+			  })
+				
+				$('#cancelForget').click(function(){
+          $('#forgetModal').modal('hide');
+          $('#loginModal').modal({backdrop: 'static', keyboard: false}) 
+        });
+        
+			});
+		</script>
+    <script src="src/js/app.js"></script>
+    
+  </body>
+</html>
