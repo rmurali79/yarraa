@@ -167,12 +167,12 @@
               </div>
             </div>
             <div class="col-md-10 no-padding" >
-              <div id="featurettes" class="gallery">
-                <div class="item"><a href="http://www.youtube.com/watch?v=w4Q6P7Ar3RU" rel="prettyPhoto" title="YouTube demo"><img src="img/f1.png" alt="featurettes"></a></div>
-                <div class="item"><a href="http://www.youtube.com/watch?v=5_uy1kmRaAU" rel="prettyPhoto" title="YouTube demo"><img src="img/f2.png" alt="featurettes"></a></div>
-                <div class="item"><a href="http://www.youtube.com/watch?v=-nGg-ynjJ_A" rel="prettyPhoto" title="YouTube demo"><img src="img/f3.png" alt="featurettes"></a></div>
-                <div class="item"><a href="http://www.youtube.com/watch?v=TiyZMcrIRYc" rel="prettyPhoto" title="YouTube demo"><img src="img/f4.png" alt="featurettes"></a></div>
-                <div class="item"><a href="http://www.youtube.com/watch?v=PSNqdJN7F_c" rel="prettyPhoto" title="YouTube demo"><img src="img/f5.png" alt="featurettes"></a></div>
+              <div id="featurettes">
+                <div class="item"><a href="http://www.youtube.com/watch?v=w4Q6P7Ar3RU" rel="prettyPhoto" title="FEATURETTES"><img src="img/f1.png" alt="Featurettes"></a></div>
+                <div class="item"><a href="http://www.youtube.com/watch?v=5_uy1kmRaAU" rel="prettyPhoto" title="FEATURETTES"><img src="img/f2.png" alt="Featurettes"></a></div>
+                <div class="item"><a href="http://www.youtube.com/watch?v=-nGg-ynjJ_A" rel="prettyPhoto" title="FEATURETTES"><img src="img/f3.png" alt="Featurettes"></a></div>
+                <div class="item"><a href="http://www.youtube.com/watch?v=TiyZMcrIRYc" rel="prettyPhoto" title="FEATURETTES"><img src="img/f4.png" alt="Featurettes"></a></div>
+                <div class="item"><a href="http://www.youtube.com/watch?v=PSNqdJN7F_c" rel="prettyPhoto" title="FEATURETTES"><img src="img/f5.png" alt="Featurettes"></a></div>
               </div>
             </div>
           </div>
@@ -966,10 +966,8 @@
 				itemsDesktop : [1199,4],
 				itemsDesktopSmall : [979,4]
 				});
-				$("area[rel^='prettyPhoto']").prettyPhoto();
-        $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
-        $(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
-    
+				$("a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square'});
+        
 				$("#our-partners").owlCarousel({
 				autoPlay: 3000, //Set AutoPlay to 3 seconds
 				items : 6,
